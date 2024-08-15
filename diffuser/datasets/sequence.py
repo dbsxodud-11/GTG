@@ -334,7 +334,7 @@ class ZipDataset(torch.utils.data.Dataset):
                                  min_percentile=0)
                                 )
         
-        if dataset.startswith("tfbind8"):
+        if dataset.startswith("tfbind"):
             task.map_to_logits()
         self.data_x = torch.from_numpy(task.x.reshape(task.x.shape[0], -1)).float()
         self.data_y = torch.from_numpy(task.y).float()

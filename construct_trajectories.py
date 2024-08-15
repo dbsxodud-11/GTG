@@ -6,7 +6,7 @@ from tqdm import tqdm
 from contextlib import contextmanager, redirect_stderr, redirect_stdout
 import pickle as pkl
 from tqdm import tqdm
-from utils import set_seed
+from diffuser.utils import set_seed
 
 @contextmanager
 def suppress_output():
